@@ -12,9 +12,9 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "CarePulse",
+  title: "MirrorBall",
   description:
-    "A healthcare patient management System designed to streamline patient registration, appointment scheduling, and medical records management for healthcare providers.",
+    "An one-stop application for your mental health well being.",
   icons: {
     icon: "/assets/icons/logo-icon.svg",
   },

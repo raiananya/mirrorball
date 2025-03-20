@@ -28,6 +28,7 @@ export const PatientForm = () => {
   });
 
   const onSubmit = async (values: z.infer<typeof UserFormValidation>) => {
+    event?.preventDefault(); 
     setIsLoading(true);
 
     try {
@@ -51,10 +52,10 @@ export const PatientForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
-        <section className="mb-12 space-y-4">
-          <h1 className="header">Hi there 👋</h1>
-          <p className="text-dark-700">Get started with appointments.</p>
+      <form onSubmit={(e)=>form.handleSubmit(onSubmit)(e)} className="flex-1 space-y-5">
+        <section className="space-y-2">
+          <h1 className="header text-light-100">Hey there 👋🏻</h1>
+          <p className="text-dark-700">Make your mental health a priority.</p>
         </section>
 
         <CustomFormField
