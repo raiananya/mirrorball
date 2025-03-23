@@ -25,7 +25,7 @@ const Home = ({ searchParams }: SearchParamProps) => {
 
           <div className="text-14-regular mt-8 flex justify-between">
             <p className="justify-items-end text-dark-600 xl:text-left">
-              © 2025 MirrorBall
+              
             </p>
             <Link href="/?admin=true" className="text-green-500">
               Admin
@@ -40,6 +40,7 @@ const Home = ({ searchParams }: SearchParamProps) => {
         width={1000}
         alt="patient"
         className="side-img max-w-[50%]"
+        priority
 
       />
     </div>

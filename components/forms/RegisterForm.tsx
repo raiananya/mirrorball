@@ -355,14 +355,14 @@ const RegisterForm = ({ user }: { user: User }) => {
             fieldType={FormFieldType.CHECKBOX}
             control={form.control}
             name="treatmentConsent"
-            label="I consent to receive treatment for my health condition."
+            label="I consent to receive treatment for my mental health condition."
           />
 
           <CustomFormField
             fieldType={FormFieldType.CHECKBOX}
             control={form.control}
             name="disclosureConsent"
-            label="I consent to the use and disclosure of my health
+            label="I consent to the use and disclosure of my mental health
             information for treatment purposes."
           />
 
