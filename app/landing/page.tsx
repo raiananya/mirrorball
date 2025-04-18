@@ -44,11 +44,19 @@ export default function LandingPage() {
           <h3 className="text-xl font-semibold mt-4">24/7 Support</h3>
           <p className="text-dark-700">Connect with professionals anytime you need help.</p>
         </div>
-        <div className="p-6 rounded-lg bg-dark-400 text-center shadow-md flex flex-col items-center">
-          <Image src="/assets/icons/test.png" alt="Resources" width={150} height={150} className="w-full max-w-[120px] md:max-w-[180px] h-auto mb-4" />
-          <h3 className="text-xl font-semibold mt-4">Guided Resources</h3>
-          <p className="text-dark-700">Access expert mental health guides and self-help tools.</p>
-        </div>
+        <Link href="/assessments" className="block">
+      <div className="p-6 rounded-lg bg-dark-400 text-center shadow-md flex flex-col items-center hover:shadow-lg transition cursor-pointer">
+        <Image
+          src="/assets/icons/test.png"
+          alt="Assessments"
+          width={150}
+          height={150}
+          className="w-full max-w-[120px] md:max-w-[180px] h-auto mb-4"
+        />
+        <h3 className="text-xl font-semibold mt-4">Assessments</h3>
+        <p className="text-dark-700">Access expert mental health guides and self-help tools.</p>
+      </div>
+    </Link>
         <div className="p-6 rounded-lg bg-dark-400 text-center shadow-md flex flex-col items-center">
           <Image src="/assets/icons/community.png" alt="Community"  width={150} height={150} className="w-full max-w-[120px] md:max-w-[180px] h-auto mb-4 mt-4" />
           <h3 className="text-xl font-semibold mt-4">Safe Community</h3>
