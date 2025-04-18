@@ -44,6 +44,11 @@ export default function LandingPage() {
           <h3 className="text-xl font-semibold mt-4">24/7 Support</h3>
           <p className="text-dark-700">Connect with professionals anytime you need help.</p>
         </div>
+        <div className="p-6 rounded-lg bg-dark-400 text-center shadow-md flex flex-col items-center">
+          <Image src="/assets/icons/test.png" alt="Resources" width={150} height={150} className="w-full max-w-[120px] md:max-w-[180px] h-auto mb-4" />
+          <h3 className="text-xl font-semibold mt-4">Guided Resources</h3>
+          <p className="text-dark-700">Access expert mental health guides and self-help tools.</p>
+        </div>
         <Link href="/assessments" className="block">
       <div className="p-6 rounded-lg bg-dark-400 text-center shadow-md flex flex-col items-center hover:shadow-lg transition cursor-pointer">
         <Image
@@ -64,11 +69,13 @@ export default function LandingPage() {
         </div>
       </section>
       <section className="grid md:grid-cols-2 gap-8 mt-12 px-4">
+      <Link href="/blog">
         <div className="p-6 rounded-lg bg-dark-400 text-center shadow-md flex flex-col items-center">
           <Image src="/assets/icons/blog.png" alt="Blog" width={150} height={150} className="w-full max-w-[120px] md:max-w-[180px] h-auto mb-4"/>
           <h3 className="text-xl font-semibold mt-4">Blogs</h3>
           <p className="text-dark-700">Connect with professionals anytime you need help.</p>
         </div>
+        </Link>
         <div className="p-6 rounded-lg bg-dark-400 text-center shadow-md flex flex-col items-center">
           <Image src="/assets/icons/journal.png" alt="Journal" width={150} height={150} className="w-full max-w-[120px] md:max-w-[180px] h-auto mb-4" />
           <h3 className="text-xl font-semibold mt-4">Your daily journal</h3>
